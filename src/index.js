@@ -17,7 +17,7 @@ module.exports = function check(str, bracketsConfig) {
     let topElement = stack[stack.length - 1];
     
     if (cloneBrackets.includes(currentChar) && stack.includes(currentChar)) {
-      if (currentChar = topElement) {
+      if (currentChar === topElement) {
         stack.pop(currentChar);
         } else {
           return false;
